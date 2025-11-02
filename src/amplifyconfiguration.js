@@ -1,17 +1,15 @@
 // AWS Amplify Configuration
-// TODO: Replace these values with your actual AWS Amplify configuration
-// You can get these from AWS Amplify Console or by running 'amplify pull'
+// Configured for Cognito User Pool: us-east-2_6HWZrEoLU
 
 const amplifyConfig = {
   Auth: {
     Cognito: {
-      userPoolId: 'YOUR_USER_POOL_ID', // e.g., 'us-east-1_XXXXXXXXX'
-      userPoolClientId: 'YOUR_USER_POOL_CLIENT_ID', // e.g., '1234567890abcdefghijklmnop'
-      identityPoolId: 'YOUR_IDENTITY_POOL_ID', // Optional, e.g., 'us-east-1:12345678-1234-1234-1234-123456789012'
+      userPoolId: "us-east-2_6HWZrEoLU",
+      userPoolClientId: "3h1i43cs6cd91dlg02o86m3j5j",
       loginWith: {
         email: true,
       },
-      signUpVerificationMethod: 'code', // 'code' | 'link'
+      signUpVerificationMethod: "code", // 'code' | 'link'
       userAttributes: {
         email: {
           required: true,
@@ -30,4 +28,3 @@ const amplifyConfig = {
 };
 
 export default amplifyConfig;
-
